@@ -1,0 +1,11 @@
+1. connect.js
+2. sync.js
+3. save.js
+
+
+create table users_roles(
+id int(11) NOT NULL AUTO_INCREMENT,
+user_id INT(11),
+role_id INT(11),
+PRIMARY KEY (id)
+);

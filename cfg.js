@@ -2,9 +2,9 @@
 var path = require('path');
 
 module.exports = {
-	
+
 	logging: {
-		name: 'berly',
+		name: 'lampent',
 		streams : [ {
 			level : 'debug',
 			type : 'rotating-file',
@@ -13,9 +13,9 @@ module.exports = {
 			count : 3 // keep 3 back copies
 		} ]
 	},
-	
+
 	test_log: {
-		name: 'berly',
+		name: 'lampent',
 		streams : [ {
 			level : 'debug',
 			type : 'rotating-file',
@@ -24,31 +24,16 @@ module.exports = {
 			count : 3 // keep 3 back copies
 		} ]
 	},
-		
-	test:{
-		url : 'http://localhost:8000'
-	},
-	
-	test_db:{
-		host: 'localhost',
-		name: 'beryl_test',
-		port: '27017',
-	},
-	
-	db:{
-		host: 'localhost',
-		name: 'beryl',
-		port: '27017',
-	},
-	
+
 	token:{
 		secret: 'uwotm8xxc',
-		user_property: 'payload', 
-		age: '30m'
+		user_property: 'payload',
+		age: '30m',
+		exp_in_days: 1
 	},
-	
+
 	app:{
 		api_url:'/api/v1.0',
-		port:8000
+		port:3012
 	}
 };
