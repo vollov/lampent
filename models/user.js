@@ -12,8 +12,8 @@ const log = bunyan.createLogger(_.extend(cfg.logging, {name: 'user'}));
 module.exports = function(sequelize, DataTypes) {
   var User = sequelize.define("User", {
     username: {
-      type:DataTypes.STRING,
-      allowNull: false,
+      type:DataTypes.STRING(125),
+      allowNull: false
     },
     email: {
       type:DataTypes.STRING,
